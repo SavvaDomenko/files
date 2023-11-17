@@ -243,11 +243,11 @@ while not finished:
     keys = pygame.key.get_pressed()
     if not False in keys: print(keys)
     
-    if keys[119]: gun.drive('up') #отвечают за переезд левой пушки
-    elif keys[115]: gun.drive('down')
+    if pygame.key.get_pressed()[pygame.K_w]: gun.drive('up') #отвечают за переезд левой пушки
+    elif pygame.key.get_pressed()[pygame.K_s]: gun.drive('down')
 
-    if keys[114]: gun2.drive('up') #отвечают за переезд правой пушки
-    elif keys1[118]: gun2.drive('down')
+    if pygame.key.get_pressed()[pygame.K_UP]: gun2.drive('up') #отвечают за переезд правой пушки
+    elif pygame.key.get_pressed()[pygame.K_DOWN]: gun2.drive('down')
 
     clock.tick(FPS)
     for event in pygame.event.get():
