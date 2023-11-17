@@ -246,8 +246,8 @@ while not finished:
     if keys[119]: gun.drive('up') #отвечают за переезд левой пушки
     elif keys[115]: gun.drive('down')
 
-    if keys[1073741906]: gun2.drive('up') #отвечают за переезд правой пушки
-    elif keys[1073741905]: gun2.drive('down')
+    if keys[114]: gun2.drive('up') #отвечают за переезд правой пушки
+    elif keys1[118]: gun2.drive('down')
 
     clock.tick(FPS)
     for event in pygame.event.get():
